@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "src\Infra
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "src\Domain\Domain.csproj", "{393F1E37-A638-4C03-BEEC-59C9A49E449E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PresentationPartner", "ExternalPartner\PresentationPartner.csproj", "{FFF2F379-7495-4707-97B6-2ED660565EBB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PresentationPartner", "src\PresentationPartner\PresentationPartner.csproj", "{FFF2F379-7495-4707-97B6-2ED660565EBB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
