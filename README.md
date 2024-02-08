@@ -49,3 +49,7 @@
 
 - **Hangfire for Background Jobs:**
   - Utilized Hangfire for managing background jobs, enhancing the system's ability to handle asynchronous tasks efficiently.
+
+## Unit testing
+- Add xUnit for unit tests.
+- Add Sonarqube to validade code coverage and improvements.
