@@ -1,10 +1,12 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.Diagnostics.CodeAnalysis;
 
 namespace Application.DTOs.Request
 {
     /// <summary>
     /// Client request.
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class ClientRequest
     {
         /// <summary>

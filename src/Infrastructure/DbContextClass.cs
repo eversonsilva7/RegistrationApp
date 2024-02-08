@@ -2,7 +2,9 @@
 {
     using Domain.Models;
     using Microsoft.EntityFrameworkCore;
+    using System.Diagnostics.CodeAnalysis;
 
+    [ExcludeFromCodeCoverage]
     public class DbContextClass : DbContext
     {
         public DbContextClass()

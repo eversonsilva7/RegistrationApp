@@ -3,10 +3,12 @@
     using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations.Schema;
+    using System.Diagnostics.CodeAnalysis;
 
     /// <summary>
     /// Client model.
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class Client
     {
         public int Id { get; set; }

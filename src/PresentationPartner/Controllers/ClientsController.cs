@@ -2,9 +2,11 @@
 using Microsoft.EntityFrameworkCore;
 using PresentationPartner.Data;
 using PresentationPartner.Models;
+using System.Diagnostics.CodeAnalysis;
 
 namespace PresentationPartner.Controllers
 {
+    [ExcludeFromCodeCoverage]
     [ApiController]
     [Route("api/[controller]")]
     public class ClientsController : ControllerBase

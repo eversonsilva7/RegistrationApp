@@ -1,5 +1,8 @@
-﻿namespace PresentationPartner.Models
+﻿using System.Diagnostics.CodeAnalysis;
+
+namespace PresentationPartner.Models
 {
+    [ExcludeFromCodeCoverage]
     public class Client
     {
         public int Id { get; set; }

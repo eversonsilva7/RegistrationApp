@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using PresentationPartner.Data;
+using System.Diagnostics.CodeAnalysis;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -26,3 +27,6 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+
+[ExcludeFromCodeCoverage]
+public partial class Program { }

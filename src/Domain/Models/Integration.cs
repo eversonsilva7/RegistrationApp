@@ -1,8 +1,10 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Diagnostics.CodeAnalysis;
 
 namespace Domain.Models
 {
+    [ExcludeFromCodeCoverage]
     public class Integration
     {
         public int Id { get; set; }

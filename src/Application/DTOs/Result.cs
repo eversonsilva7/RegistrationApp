@@ -1,6 +1,8 @@
-﻿namespace Application.DTOs
+﻿using System.Diagnostics.CodeAnalysis;
+
+namespace Application.DTOs
 {
-    // Result.cs
+    [ExcludeFromCodeCoverage]
     public class Result
     {
         /// <summary>

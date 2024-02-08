@@ -1,10 +1,12 @@
 ﻿namespace Application.DTOs
 {
     using System;
+    using System.Diagnostics.CodeAnalysis;
 
     /// <summary>
     /// Client model.
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class Client
     {
         public int Id { get; set; }

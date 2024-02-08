@@ -1,7 +1,9 @@
 ﻿namespace Infrastructure.Repositories
 {
     using Domain.Interfaces;
+    using System.Diagnostics.CodeAnalysis;
 
+    [ExcludeFromCodeCoverage]
     public class UnitOfWork : IUnitOfWork
     {
         private readonly DbContextClass _dbContext;

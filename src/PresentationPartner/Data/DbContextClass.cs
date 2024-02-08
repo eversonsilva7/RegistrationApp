@@ -1,8 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using PresentationPartner.Models;
+using System.Diagnostics.CodeAnalysis;
 
 namespace PresentationPartner.Data
 {
+    [ExcludeFromCodeCoverage]
     public class DbContextClass : DbContext
     {
         public DbContextClass(DbContextOptions<DbContextClass> options) : base(options) { }

@@ -1,14 +1,12 @@
 ﻿namespace Application.DependencyInjection
 {
-    using System.Diagnostics.CodeAnalysis;
     using Application.Interfaces;
     using Application.Services;
     using Domain.DependencyInjection;
-    using Microsoft.Extensions.DependencyInjection;
-    using Microsoft.Extensions.Configuration;
     using Infrastructure.DependencyInjection;
-    using Domain.Services;
-    using Domain.Interfaces;
+    using Microsoft.Extensions.Configuration;
+    using Microsoft.Extensions.DependencyInjection;
+    using System.Diagnostics.CodeAnalysis;
 
     [ExcludeFromCodeCoverage]
     public static class DependencyInjection
@@ -21,7 +19,6 @@
 
             services.AddInfrastructureDependencies(configuration);
 
-            // Infrastructure
             services.AddInfrastructure();
 
             return services;
@@ -36,7 +33,6 @@
         {
             services.AddTransient<IClientProcessor, ClientProcessor>();
             services.AddScoped<IJobProcessor, JobProcessor>();
-            //services.AddTransient<IIntegrationService, IntegrationService>();
             return services;
         }
     }

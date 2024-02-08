@@ -3,7 +3,9 @@
     using Domain.Interfaces;
     using Domain.Models;
     using Microsoft.EntityFrameworkCore;
+    using System.Diagnostics.CodeAnalysis;
 
+    [ExcludeFromCodeCoverage]
     public class ClientRepository : GenericRepository<Client>, IClientRepository
     {
         public ClientRepository(DbContextClass dbContext) : base(dbContext)

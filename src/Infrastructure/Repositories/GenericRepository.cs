@@ -3,7 +3,9 @@
     using Domain.Interfaces;
     using Infrastructure;
     using Microsoft.EntityFrameworkCore;
+    using System.Diagnostics.CodeAnalysis;
 
+    [ExcludeFromCodeCoverage]
     public abstract class GenericRepository<T> : IGenericRepository<T> where T : class
     {
         protected readonly DbContextClass _dbContext;
