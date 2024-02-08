@@ -13,11 +13,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "src\Domain\Domain
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PresentationPartner", "src\PresentationPartner\PresentationPartner.csproj", "{FFF2F379-7495-4707-97B6-2ED660565EBB}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{C4CDFAF8-1034-462B-A705-245EA12D01DC}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{C4CDFAF8-1034-462B-A705-245EA12D01DC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{ECCB2859-1857-453D-A731-3C42761A6A46}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain.Tests", "Domain.Tests\Domain.Tests.csproj", "{131D1661-2AFD-4A8C-A5FE-18CF555C541E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain.Tests", "tests\Domain.Tests\Domain.Tests.csproj", "{131D1661-2AFD-4A8C-A5FE-18CF555C541E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -26,7 +26,7 @@ namespace Domain.Tests
         }
 
         [Theory]
-        [Trait("Stock", "ClientService")]
+        [Trait("Registration", "ClientService")]
         [InlineData(false, "Value cannot be null. (Parameter 'unitOfWork')")]
         public Task ClientService_ConstructorValidations_Exception(bool createUnitOfWork, string message)
         {
@@ -49,7 +49,7 @@ namespace Domain.Tests
         }
 
         [Fact]
-        [Trait("Stock", "StockSentinelConfigurationsManagerServices")]
+        [Trait("Registration", "StockSentinelConfigurationsManagerServices")]
         public async Task ClientService_GetAllClients_Success()
         {
             // Arrange
