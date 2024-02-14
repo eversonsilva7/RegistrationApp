@@ -17,9 +17,8 @@
             {
                 options.UseSqlServer(configuration.GetConnectionString("DataBaseConnection"));
             });
-            services.AddScoped<IUnitOfWork, UnitOfWork>();
-            services.AddScoped<IClientRepository, ClientRepository>();
-            services.AddScoped<IIntegrationRepository, IntegrationRepository>();
+
+            services.AddTransient<IUnitOfWork, UnitOfWork>();
             return services;
         }
     }

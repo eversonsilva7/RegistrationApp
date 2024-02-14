@@ -7,10 +7,6 @@
     [ExcludeFromCodeCoverage]
     public class DbContextClass : DbContext
     {
-        public DbContextClass()
-        {
-        }
-
         public DbContextClass(DbContextOptions<DbContextClass> contextOptions) : base(contextOptions)
         {
         }

@@ -12,13 +12,18 @@
 
         public IIntegrationRepository Integrations { get; }
 
-        public UnitOfWork(DbContextClass dbContext,
-                          IClientRepository clientRepository,
-                          IIntegrationRepository integrations)
+        public UnitOfWork(DbContextClass dbContext)
         {
+            if (dbContext is null)
+            {
+                throw new ArgumentNullException(nameof(dbContext));
+            }
+
             _dbContext = dbContext;
-            Clients = clientRepository;
-            Integrations = integrations;
+            //Clients = clientRepository;
+            //Integrations = integrations;
+            Clients = new ClientRepository(_dbContext);
+            Integrations = new IntegrationRepository(_dbContext);
         }
 
         public int Save()
